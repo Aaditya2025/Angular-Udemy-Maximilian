@@ -1,0 +1,15 @@
+.btn{
+    background-color: blue;
+    color: white;
+    text-decoration: solid;
+    border-radius:0%;
+    margin-left: 105px;
+}
+
+.user{
+    margin: 10px;
+}
+
+.name{
+    margin-left: 105px;
+}

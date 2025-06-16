@@ -1,0 +1,26 @@
+<h3>Data Binding Task:</h3>
+
+<pre>
+    Task:
+    1. Add a Input field which updates a property ('username') via Two-Way-Binding. 
+    2. Output the username property via String Interpolation (in a paragraph below the input)
+    3. Add a button which may only be clicked if the username is NOT an empty string. 
+    4. Upon clicking the button, the username should be reset to an empty string.
+</pre>
+
+<label class="user">Username:</label>
+<input 
+    type="text" 
+    class="user"
+    placeholder="Enter the username"
+    [(ngModel)]= "username"
+    >
+
+<p class="name">{{username}}</p>
+
+<button
+class="btn"
+[disabled]="username === ''"
+(click)="username = ''"
+>
+Reset User</button>

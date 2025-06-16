@@ -1,0 +1,57 @@
+#Decorator: Decorators are a Typescript feature whichallow youto enhance your classes, for example Enhance elements you use in your code.
+It's not restricted to class but here we will use a class decorator. Decorator always named by using '@' sign in the starting. 
+
+
+
+APP MODULES: Angular uses components to build webpages and uses modules to basically bundle different pieces for example, componets of your app 
+into packages.
+
+
+
+DATABINDING: It means communication, the communication between TypeScript Code(Business Logic) and Template(HTML).
+It is used to Output Data from [TypeScript Code to HTML Code] and it is done by: 
+1. String Interpolation: {{ DATA }}  :- In the end it will return a string. 
+🧠 Bas: HTML ke andar JavaScript ki value print karni ho to {{ }} use karo.
+
+2. Property Binding: [property] = "data" :- Component (TypeScript file) ki value ko HTML element ke kisi property me set karna.
+💬 "Component ki value HTML ke andar bhejna" — isko hi Property Binding bolte hain.
+--> element-property → HTML element ka property (jaise value, disabled, src etc.)
+
+📌 $event ➡️ Angular ka special variable hai jo kisi DOM event (📥 input, 🖱️ click, etc.) ka data carry karta hai, jisse hum event-related info access kar sakte hain.It will pass as an argument to the method we were calling. 
+
+Another is From [HTML Code to TypeScript Code] and it is done by: 
+3. Event Binding: (event) = "expression"
+
+Combination of Both: Two-Way-Bindng([(ngModel)] = "data") -: Here you able to react events and output something at the same time.
+
+
+
+
+🚀 What is a Directive in Angular?
+🔧 A Directive is a special instruction in Angular that adds behavior to elements in the DOM (HTML).
+
+There are three types of directives in Angular:
+1️⃣ Component Directive:
+✅ Every component is actually a directive with a template.
+Created using @Component decorator.
+It controls a part of the UI.
+
+2️⃣ Structural Directive
+🧱 These directives change the structure of the DOM (add/remove elements).
+They use a * prefix.
+🔹 Examples:
+Directive	           Use
+*ngIf	        Show/hide elements conditionally
+*ngFor	        Loop through items in a list
+*ngSwitch	    Conditional switching
+
+
+
+3️⃣ Attribute Directive
+🎨 These directives change the appearance or behavior of an element.
+They are added as attributes to elements.
+🔹 Built-in Examples:
+Directive	        Purpose
+ngClass	         Add/remove CSS classes
+ngStyle	         Set dynamic styles
+[disabled]	     Bind property to enable/disable

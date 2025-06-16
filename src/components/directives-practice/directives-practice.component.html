@@ -1,0 +1,12 @@
+<h1>Practice Code for Directives:</h1>
+
+
+<button (click)="toggleDetails()">Display Details</button>
+<p *ngIf="showDetails">Secret Password = tuna</p>
+
+<div
+    *ngFor="let item of logClicks; let i = index"
+    [ngStyle]="i >= 4 ? {'background-color': 'blue', 'color': 'whiter'} : {}"
+    >
+    {{i + 1 }}: {{item}}
+</div>
